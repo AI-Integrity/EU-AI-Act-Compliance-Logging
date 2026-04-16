@@ -165,19 +165,6 @@ PRISM 로그는 의도적으로 장황한 JSON이 아닌 간결한 코드로 설
 
 ---
 
-## 상업 서비스 (선택 사항)
-
-이 표준은 MIT 라이선스 하에 영구 무료입니다. 일부 조직은 추가로 다음이 필요할 수 있습니다:
-
-- **"PRISM Compliant" 인증** — 배치된 시스템이 표준에 부합하는지 제3자 검증
-- **업계 벤치마크 데이터** — 자사 시스템을 업계 평균과 비교
-- **감사인 교육** — 인증 감사인 프로그램
-- **엔터프라이즈 컨설팅** — 조직 맞춤 가치 위계 설계 및 거버넌스 통합
-
-이 서비스는 [AI Integrity Organization (AIO)](https://aioq.org)에서 제공합니다. 표준 사용에 서비스 구매는 필요 없습니다.
-
----
-
 ## 이론적 기반
 
 PRISM은 스위스 등록 비영리 기관 [AI Integrity Organization (AIO)](https://aioq.org)이 개발하고 유지합니다.
@@ -193,9 +180,6 @@ Working Papers:
 - S. Lee (2026a). AI Integrity: Definition, Authority Stack Model, and Enhanced Cascade Mapping Hypothesis. arXiv:cs.AI.
 - S. Lee (2026b). The PRISM Framework for Measuring AI Value Hierarchies. arXiv:cs.AI.
 - S. Lee (2026c). Measuring AI Value Priorities: Empirical Analysis. arXiv:cs.AI.
-- S. Lee (2026d). PRISM Risk Signal Framework: Hierarchy-Based Red Lines for AI Behavioral Risk. SSRN 6449079.
-
-[OECD Catalogue of Tools & Metrics for Trustworthy AI](https://oecd.ai)에 등재.
 
 ---
 

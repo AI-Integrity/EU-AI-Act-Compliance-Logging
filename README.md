@@ -4,8 +4,6 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](./CHANGELOG.md)
-[![한국어](https://img.shields.io/badge/docs-한국어-red.svg)](./docs/README_KR.md)
-
 ---
 
 ## What a PRISM log looks like
@@ -165,19 +163,6 @@ These limitations are shared by all reasoning logs (chain-of-thought, attention 
 
 ---
 
-## Commercial services (optional)
-
-This standard is free under MIT. Some organizations also need:
-
-- **"PRISM Compliant" certification** — third-party verification that a deployment conforms to the standard
-- **Industry benchmark data** — compare a deployment to cross-industry aggregates
-- **Auditor training** — certified auditor program
-- **Enterprise consulting** — organization-specific value hierarchy design and governance integration
-
-These services are provided by [AI Integrity Organization (AIO)](https://aioq.org). Using the standard does not require purchasing any service.
-
----
-
 ## Theoretical foundation
 
 PRISM is developed and maintained by [AI Integrity Organization (AIO)](https://aioq.org), a Swiss-registered nonprofit.
@@ -193,9 +178,6 @@ Working papers:
 - S. Lee (2026a). AI Integrity: Definition, Authority Stack Model, and Enhanced Cascade Mapping Hypothesis. arXiv:cs.AI.
 - S. Lee (2026b). The PRISM Framework for Measuring AI Value Hierarchies. arXiv:cs.AI.
 - S. Lee (2026c). Measuring AI Value Priorities: Empirical Analysis. arXiv:cs.AI.
-- S. Lee (2026d). PRISM Risk Signal Framework: Hierarchy-Based Red Lines for AI Behavioral Risk. SSRN 6449079.
-
-Registered in the [OECD Catalogue of Tools & Metrics for Trustworthy AI](https://oecd.ai).
 
 ---
 
@@ -208,7 +190,7 @@ Registered in the [OECD Catalogue of Tools & Metrics for Trustworthy AI](https:/
 | [`system_prompts/prism_v1_en_inline.md`](./system_prompts/prism_v1_en_inline.md) | Mode A prompt — English |
 | [`system_prompts/prism_v1_en_json.md`](./system_prompts/prism_v1_en_json.md) | Mode B prompt — English |
 | [`system_prompts/prism_v1_en_tool.md`](./system_prompts/prism_v1_en_tool.md) | Mode C prompt — English |
-| [`system_prompts/prism_v1_kr_*.md`](./system_prompts/) | Korean versions of all three modes |
+| [`system_prompts/prism_v1_kr_*.md`](./system_prompts/) | Korean versions of all three modes (한국어) |
 | [`examples/`](./examples/) | Real-world log examples across 7 domains |
 | [`tests/validate.py`](./tests/validate.py) | Validator with multi-mode extraction |
 | [`tools/prism_parser.py`](./tools/prism_parser.py) | Code extraction & structured parsing helper |
@@ -233,6 +215,3 @@ Attribution appreciated but not required.
 - Commercial inquiries: 2sk@aioq.org
 - Website: [aioq.org](https://aioq.org)
 
----
-
-한국어 문서: [README_KR.md](./docs/README_KR.md)
