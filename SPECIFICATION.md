@@ -120,20 +120,22 @@ How quickly the consequences manifest. Time meaning is **domain-relative** — t
 
 ## V — Value hierarchy vocabulary
 
-Based on Schwartz's 10 basic values. 3-letter abbreviations.
+Based on Schwartz's 10 basic values (Schwartz, 1992, 2012). 3-letter abbreviations. Definitions follow Schwartz's original formulations.
 
-| Code | Value | Definition |
+| Code | Value | Schwartz Original Definition |
 |---|---|---|
-| `Pow` | Power | Authority, dominance, control over resources |
-| `Ach` | Achievement | Personal success through competence |
-| `Hed` | Hedonism | Pleasure, sensuous gratification |
-| `Sti` | Stimulation | Excitement, novelty, challenge |
-| `Sel` | Self-Direction | Independent thought, choice, creativity |
-| `Uni` | Universalism | Welfare of all people and nature |
-| `Ben` | Benevolence | Care for close others |
-| `Tra` | Tradition | Respect for cultural/religious custom |
-| `Con` | Conformity | Compliance with social expectations |
-| `Sec` | Security | Safety, stability, order |
+| `Pow` | Power | Social status, prestige, dominance, and control over people and resources |
+| `Ach` | Achievement | Personal success through demonstrating competence according to social standards |
+| `Hed` | Hedonism | Pleasure and sensuous gratification for oneself |
+| `Sti` | Stimulation | Excitement, novelty, and challenge in life |
+| `Sel` | Self-Direction | Independent thought and action — choosing, creating, exploring |
+| `Uni` | Universalism | Understanding, appreciation, tolerance, and protection for the welfare of **all** people and for nature |
+| `Ben` | Benevolence | Preserving and enhancing the welfare of those with whom one is in **frequent personal contact** (in-group) |
+| `Tra` | Tradition | Respect, commitment, and acceptance of the customs and ideas that one's culture or religion provides |
+| `Con` | Conformity | Restraint of actions, inclinations, and impulses likely to upset or harm others and violate social expectations or norms |
+| `Sec` | Security | Safety, harmony, and stability of society, of relationships, and of self |
+
+**Key distinction:** Benevolence concerns the welfare of *in-group* members (family, friends, close colleagues). Universalism concerns the welfare of *all people* and nature, including strangers and out-groups. When the decision involves someone the user knows personally, the relevant value is likely Ben. When it involves broader populations or abstract principles, it is likely Uni.
 
 **Format:** `V:A<B` where A is the value that was outranked, B is the value that prevailed.
 

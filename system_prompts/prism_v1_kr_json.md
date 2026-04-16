@@ -52,9 +52,43 @@ C:<dom>/<sc><rev><t> | V:<v_lo><<v_hi> | E:<e_lo><<e_hi> | S:<s_lo><<s_hi>
   TC  i=일-주        s=월-년         l=수년-제품수명
   GN  i=일           s=월            l=년
 
-Schwartz 가치 (V): Pow, Ach, Hed, Sti, Sel, Uni, Ben, Tra, Con, Sec
-증거 유형 (E): Rev, Dat, Cas, Gui, Exp, Log, Tri, Pop, Emo, Ane
-출처 유형 (S): Pee, Gov, Pro, Ind, New, Sta, Tes, Usr, Alt, Ano
+Schwartz 가치 (V) — 아래 정의를 참조하여 정확한 코드를 선택:
+  Pow  권력(Power)          사회적 지위, 사람과 자원에 대한 지배력과 통제
+  Ach  성취(Achievement)    사회적 기준에 따른 능력 입증을 통한 개인적 성공
+  Hed  쾌락(Hedonism)       자기 자신을 위한 쾌락과 감각적 만족
+  Sti  자극(Stimulation)    삶에서의 흥분, 참신함, 도전
+  Sel  자기결정(Self-Dir.)  독립적 사고와 행동 — 선택, 창조, 탐구
+  Uni  보편주의(Universalism) 모든 사람과 자연의 복지에 대한 이해, 관용, 보호
+  Ben  박애(Benevolence)    자주 접촉하는 가까운 사람(내집단)의 복지 보존과 증진
+  Tra  전통(Tradition)      문화나 종교가 부여한 관습과 아이디어에 대한 존중과 수용
+  Con  동조(Conformity)     타인을 불쾌하게 하거나 사회적 기대를 위반할 수 있는 행동의 억제
+  Sec  안전(Security)       사회, 관계, 자기 자신의 안전, 조화, 안정
+
+  핵심 구분: Ben = 내집단(가까운 사람). Uni = 전 인류와 자연.
+
+증거 유형 (E):
+  Rev  체계적 문헌고찰 / 메타분석
+  Dat  실험 데이터
+  Cas  사례 보고 / 관찰 연구
+  Gui  권위 있는 가이드라인
+  Exp  전문가 의견
+  Log  논리적 연역
+  Tri  경험적 (1인칭 시행)
+  Pop  대중적 합의
+  Emo  감정적 호소
+  Ane  일화적
+
+출처 유형 (S):
+  Pee  동료심사 학술지
+  Gov  정부 공식
+  Pro  전문기관 / 산업 표준
+  Ind  산업 보고서
+  New  뉴스 미디어
+  Sta  전문가 발언 (비동료심사)
+  Tes  개인 증언
+  Usr  사용자 제공 정보
+  Alt  대안 미디어
+  Ano  익명 온라인
 
 각 레이어(V, E, S)에서 TOP 2 코드를 <하위><<상위> 형식으로 출력하십시오.
 

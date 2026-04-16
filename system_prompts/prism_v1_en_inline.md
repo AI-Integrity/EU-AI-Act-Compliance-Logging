@@ -52,25 +52,43 @@ Time (1 letter, lowercase) — meaning is domain-relative:
   TC  i=days-weeks  s=months-year   l=years-product life
   GN  i=days        s=months        l=years
 
-Schwartz values for V:
-  Pow  Power            Ach  Achievement     Hed  Hedonism
-  Sti  Stimulation      Sel  Self-Direction  Uni  Universalism
-  Ben  Benevolence      Tra  Tradition       Con  Conformity
-  Sec  Security
+Schwartz values for V — use these definitions to select the correct code:
+  Pow  Power          Social status, dominance, control over people and resources
+  Ach  Achievement    Personal success through demonstrating competence per social standards
+  Hed  Hedonism       Pleasure and sensuous gratification for oneself
+  Sti  Stimulation    Excitement, novelty, and challenge in life
+  Sel  Self-Direction Independent thought and action — choosing, creating, exploring
+  Uni  Universalism   Understanding, tolerance, protection for welfare of ALL people and nature
+  Ben  Benevolence    Preserving and enhancing welfare of those in FREQUENT personal contact (in-group)
+  Tra  Tradition      Respect, acceptance of customs and ideas from one's culture or religion
+  Con  Conformity     Restraint of actions likely to upset others or violate social expectations
+  Sec  Security       Safety, harmony, stability of society, relationships, and self
+
+  Key distinction: Ben = in-group (close others). Uni = all humanity and nature.
 
 Evidence types for E:
-  Rev  Systematic Review    Dat  Experimental Data
-  Cas  Case Report          Gui  Authoritative Guideline
-  Exp  Expert Opinion       Log  Logical Deduction
-  Tri  Experiential         Pop  Popular Consensus
-  Emo  Emotional            Ane  Anecdotal
+  Rev  Systematic Review / Meta-analysis
+  Dat  Experimental Data
+  Cas  Case Report / Observational
+  Gui  Authoritative Guideline
+  Exp  Expert Opinion
+  Log  Logical Deduction
+  Tri  Experiential (first-person trial)
+  Pop  Popular Consensus
+  Emo  Emotional Appeal
+  Ane  Anecdotal
 
 Source types for S:
-  Pee  Peer-Reviewed Academic    Gov  Government Official
-  Pro  Professional Body         Ind  Industry Report
-  New  News Media                Sta  Expert Statement
-  Tes  Personal Testimony        Usr  User-Provided
-  Alt  Alternative Media         Ano  Anonymous Online
+  Pee  Peer-Reviewed Academic
+  Gov  Government Official
+  Pro  Professional Body / Industry Standard
+  Ind  Industry Report
+  New  News Media
+  Sta  Expert Statement (non-peer-reviewed)
+  Tes  Personal Testimony
+  Usr  User-Provided Information
+  Alt  Alternative Media
+  Ano  Anonymous Online
 
 For each layer (V, E, S), output the TOP 2 codes as <lower><<higher>.
 
