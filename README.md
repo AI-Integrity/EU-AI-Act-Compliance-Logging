@@ -27,6 +27,26 @@ The `<` reads as "outranked by." Left = deprioritized. Right = prevailed.
 
 ---
 
+## Compliance Mapping Table
+
+PRISM is a research framework. To make it usable for EU AI Act compliance programs, every research term maps directly onto a legal obligation. This table is the canonical mapping — auditors, DPOs, and compliance officers should read this first.
+
+| Research term (PRISM) | Legal term (EU AI Act) | Provision | What the auditor receives |
+|---|---|---|---|
+| `C:` layer (domain / scope / reversibility / time) | **Traceability** | Art. 12(2) | Per-decision identification of the situation that may produce risk |
+| Full PRISM code emitted per substantive decision | **Automatic Record-keeping** | Art. 12(1) | Machine-generated log entry over the system's lifetime |
+| Timestamp + retention metadata (added at storage) | **Period of Use Records** | Art. 12(2)(a) | Evidence of when the system was operating |
+| SHA-256 chained hash of the log stream ([`tools/prism_hash.py`](./tools/prism_hash.py)) | **Log Integrity** | Art. 12(3) | Tamper-evident protection against unauthorised modification |
+| `V:` value hierarchy + `E:` evidence hierarchy | **Transparency of Reasoning** | Art. 13 | Reported value priorities and evidence types behind each output |
+| Structured single-line code reviewable by humans | **Human Oversight Enablement** | Art. 14 | Format that lets a human auditor inspect AI behaviour at scale |
+| Aggregate distribution of codes across time / versions | **Accuracy & Robustness Monitoring** | Art. 15 | Drift detection across model versions and deployment periods |
+| Anomalous code patterns (e.g. unexpected `V:` flips, `S:Ano` surges) | **Serious Incident Reporting** | Art. 73 | Pre-investigation signal source feeding the incident-reporting workflow |
+| `S:` source hierarchy (which source types prevailed) | **Data Governance Evidence** | Art. 10 (supporting) | Per-decision record of which source class drove the answer |
+
+**Reading guide:** the left column is what the standard *technically* produces; the right column is what a regulator, auditor, or notified body *expects to see*. PRISM logs do not by themselves discharge any of these obligations — they provide the structured evidence layer that compliance programs and third-party auditors reference alongside their own governance documentation. See [DISCLAIMER.md](./DISCLAIMER.md).
+
+---
+
 ## Why this exists
 
 AI regulation is shifting from product-level compliance to behavior-level accountability. The EU AI Act's high-risk provisions, taking effect in August 2026, require that operators of high-risk AI systems maintain **auditable records of AI reasoning** — not just latency and token counts, but the values, evidence, and sources that drove each decision. Similar regimes are developing in other jurisdictions.
@@ -116,38 +136,6 @@ PRISM logs are deliberately designed as compact codes rather than verbose JSON:
 | Human-readable at scale | Yes | No |
 
 The log is a **structural fingerprint**, not a summary. Context and content live in your conversation log. The PRISM code captures only what's needed for behavioral auditability.
-
----
-
-## How PRISM logs map to common compliance needs
-
-Regulators increasingly expect records that answer three questions about every significant AI decision: what was the context, what reasoning drove it, and can it be reviewed after the fact. PRISM logs provide structured evidence for each:
-
-| Compliance need | PRISM field |
-|---|---|
-| Record of context for each decision | `C:` layer (domain, scope, reversibility, time) |
-| Transparency of reasoning priorities | `V:` and `E:` layers |
-| Identifiable source trust patterns | `S:` layer |
-| Aggregatable evidence for audits | Full code, searchable |
-| Drift detection across model versions | Time-series of code distributions |
-
-### Indicative mapping to EU AI Act (for reference)
-
-The following table shows how PRISM fields can contribute to evidence for specific EU AI Act high-risk provisions. **This is an orientation aid, not a compliance claim** — PRISM logs contribute to but do not by themselves satisfy any of these requirements. See [DISCLAIMER.md](./DISCLAIMER.md).
-
-| EU AI Act provision | Requirement focus | PRISM field(s) that contribute |
-|---|---|---|
-| Art. 12(1) — Automatic logging | Automatic event capture over system lifetime | Full PRISM code emitted per substantive decision |
-| Art. 12(2)(a) — Period of use | Record of when the system was operating | Timestamp added by host at log-storage time |
-| Art. 12(2) — Traceability | Identification of situations that may produce risks | `C:` layer (domain, scope, reversibility, time) |
-| Art. 12(3) — Integrity of logs | Protection against unauthorised modification | Optional SHA-256 integrity helper (see [tools/](./tools/)) |
-| Art. 13 — Transparency | Information enabling interpretation of outputs | `V:` and `E:` layers (reported reasoning priorities) |
-| Art. 14 — Human oversight | Ability for humans to oversee AI operation | Structured code reviewable by human auditors |
-| Art. 15 — Accuracy, robustness | Consistent behaviour under similar conditions | Aggregate analysis of codes across time and versions |
-
-Integrity of logs under Art. 12(3) is supported by the optional `prism-hash` utility ([tools/prism_hash.py](./tools/prism_hash.py)) which generates tamper-evident SHA-256 hashes for each log.
-
-The specification does not claim legal equivalence with any particular regulation. What it provides is **structured evidence** that compliance programs and third-party auditors can reference alongside their own documentation.
 
 ---
 
