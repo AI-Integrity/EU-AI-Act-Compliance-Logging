@@ -253,9 +253,9 @@ This standard is a technical specification, not legal advice. Using it does not 
 
 For the academic background of the PRISM framework, see the working papers:
 
-- S. Lee (2026a). *AI Integrity: Definition, Authority Stack Model, and Enhanced Cascade Mapping Hypothesis.* arXiv:cs.AI.
-- S. Lee (2026b). *The PRISM Framework for Measuring AI Value Hierarchies.* arXiv:cs.AI.
-- S. Lee (2026c). *Measuring AI Value Priorities: Empirical Analysis.* arXiv:cs.AI.
+- S. Lee (2026a). *AI Integrity: A New Paradigm for Verifiable AI Governance.* arXiv:[2604.11065](https://arxiv.org/abs/2604.11065) [cs.AI].
+- S. Lee (2026b). *PRISM Risk Signal Framework: Hierarchy-Based Red Lines for AI Behavioral Risk.* arXiv:[2604.11070](https://arxiv.org/abs/2604.11070) [cs.AI].
+- S. Lee (2026c). *Measuring the Authority Stack of AI Systems: Empirical Analysis of 366,120 Forced-Choice Responses Across 8 AI Models.* arXiv:[2604.11216](https://arxiv.org/abs/2604.11216) [cs.AI].
 
 The 19-value profile draws specifically on:
 
